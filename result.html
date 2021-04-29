@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title> &lt;project name&gt;test report </title>
+    <title> Unit Test report </title>
     <meta name="generator" content="HTMLTestRunner" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script src="https://lib.baomitu.com/jquery/3.5.1/jquery.min.js"></script>
@@ -438,10 +438,10 @@
     <a class="sidebar-toggle d-flex mr-2">
         <i class="hamburger align-self-center"></i>
     </a>
-    <h1 style="margin-bottom: 0px; color: azure;"><project name>test report</h1>
+    <h1 style="margin-bottom: 0px; color: azure;">Unit Test report</h1>
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav ml-auto">
-<!--            <h3 style="float: right; color: azure;"> <project name>test report</h3>-->
+<!--            <h3 style="float: right; color: azure;"> Unit Test report</h3>-->
         </ul>
     </div>
 </nav>
@@ -459,22 +459,22 @@
                                 
                                 <tr>
                                     <td> Start Time</td>
-                                    <td class="text-right">2021-04-26 10:50:42</td>
+                                    <td class="text-right">2021-04-29 23:07:25</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> Duration</td>
-                                    <td class="text-right">0:00:00.000474</td>
+                                    <td class="text-right">0:00:00.000922</td>
                                 </tr>
                                 
                                 <tr>
                                     <td> Status</td>
-                                    <td class="text-right">Passed:4</td>
+                                    <td class="text-right">Passed:2 Failed:2 Errors:1 Skiped:1</td>
                                 </tr>
                                 
                                 <tr>
                                     <td>Description:</td>
-                                    <td class="text-right">describe: ... </td>
+                                    <td class="text-right">unit test</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -523,21 +523,139 @@
                     </tr>
                 </thead>
                 
-<tr class='passClass'>
-    <td>TestApp</td>
+<tr class='errorClass'>
+    <td>test.test1.TestDemo</td>
+    <td>Description of your test cases</td>
     <td></td>
-    <td></td>
-    <td>4</td>
-    <td>4</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.1',4)">Detail</a></td>
+    <td>3</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1.1',3)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1.1.1' class='hiddenRow'>
     <td class='passCase'>
-        <div class='testcase'>test_review_should_return_default</div>
+        <div class='testcase'>test_success</div>
+    </td>
+    <td style="color: #495057">
+        <div>test successfully</div>
+    </td>
+    <td style="color: #495057">
+        <div>0.00 s</div>
+    </td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr id='st1.1.2' class='none'>
+    <td class='passCase'>
+        <div class='testcase'>test_skip</div>
+    </td>
+    <td style="color: #495057">
+        <div></div>
+    </td>
+    <td style="color: #495057">
+        <div>0.00 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_st1.1.2')" >
+        skip</a>
+    <div id='div_st1.1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_st1.1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        st1.1.2: skip case
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='ft1.1.3' class='none'>
+    <td class='failCase'>
+        <div class='testcase'>test_fail</div>
+    </td>
+    <td style="color: #495057">
+        <div></div>
+    </td>
+    <td style="color: #495057">
+        <div>0.00 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1.3')" >
+        fail</a>
+    <div id='div_ft1.1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.1.3: Traceback (most recent call last):
+  File "/home/runner/work/python-unittest-htmlTestRunner-GitHub-Action-demo/python-unittest-htmlTestRunner-GitHub-Action-demo/test/test1.py", line 26, in test_fail
+    self.assertEqual(5, 6)
+AssertionError: 5 != 6
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='et1.1.4' class='none'>
+    <td class='errorCase'>
+        <div class='testcase'>test_error</div>
+    </td>
+    <td style="color: #495057">
+        <div></div>
+    </td>
+    <td style="color: #495057">
+        <div>0.00 s</div>
+    </td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.1.4')" >
+        error</a>
+    <div id='div_et1.1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        et1.1.4: Traceback (most recent call last):
+  File "/home/runner/work/python-unittest-htmlTestRunner-GitHub-Action-demo/python-unittest-htmlTestRunner-GitHub-Action-demo/test/test1.py", line 29, in test_error
+    self.assertEqual(a, 6)
+NameError: name 'a' is not defined
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>test.test1.TestDemo2</td>
+    <td></td>
+    <td></td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.2',2)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.2.1' class='hiddenRow'>
+    <td class='passCase'>
+        <div class='testcase'>test_insert_sort</div>
     </td>
     <td style="color: #495057">
         <div></div>
@@ -549,9 +667,9 @@
     <td></td>
 </tr>
 
-<tr id='pt1.1.2' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_review_should_not_return_default</div>
+<tr id='ft1.2.2' class='none'>
+    <td class='failCase'>
+        <div class='testcase'>test_insert_sort_wrong</div>
     </td>
     <td style="color: #495057">
         <div></div>
@@ -559,35 +677,32 @@
     <td style="color: #495057">
         <div>0.00 s</div>
     </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2.2')" >
+        fail</a>
+    <div id='div_ft1.2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        ft1.2.2: Traceback (most recent call last):
+  File "/home/runner/work/python-unittest-htmlTestRunner-GitHub-Action-demo/python-unittest-htmlTestRunner-GitHub-Action-demo/test/test1.py", line 38, in test_insert_sort_wrong
+    self.assertEqual(Demo.insert_sort_wrong([4, 2, 3, 1, 5]), [1, 2, 3, 4, 5])
+AssertionError: Lists differ: [4, 4, 4, 4, 5] != [1, 2, 3, 4, 5]
 
-<tr id='pt1.1.3' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_review_invalid_type_raise</div>
-    </td>
-    <td style="color: #495057">
-        <div></div>
-    </td>
-    <td style="color: #495057">
-        <div>0.00 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
-    <td></td>
-</tr>
+First differing element 0:
+4
+1
 
-<tr id='pt1.1.4' class='hiddenRow'>
-    <td class='passCase'>
-        <div class='testcase'>test_review_future_year_raise</div>
+- [4, 4, 4, 4, 5]
++ [1, 2, 3, 4, 5]
+
+        </pre>
+    </div>
+    <!--css div popup end-->
     </td>
-    <td style="color: #495057">
-        <div></div>
-    </td>
-    <td style="color: #495057">
-        <div>0.00 s</div>
-    </td>
-    <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
@@ -595,10 +710,10 @@
                     <td>Total</td>
                     <td> </td>
                     <td> </td>
-                    <td>4</td>
-                    <td class="text text-success">4</td>
-                    <td class="text text-danger">0</td>
-                    <td class="text text-warning">0</td>
+                    <td>5</td>
+                    <td class="text text-success">2</td>
+                    <td class="text text-danger">2</td>
+                    <td class="text text-warning">1</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
@@ -619,7 +734,7 @@
         ],
         datasets: [
             {
-                data: [4, 0, 0, 0],
+                data: [2, 2, 1, 1],
                 backgroundColor: [
                     "#10c469",
                     "#f9c851",
