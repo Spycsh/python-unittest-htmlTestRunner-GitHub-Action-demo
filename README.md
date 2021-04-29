@@ -11,4 +11,4 @@ In the `.github/workflows` folder, you can see the `main.yml` which contains the
 
 If you have viewed the video of the same topic about Jenkins, I would say this repo use GitHub Action to ease testers from the complex settings of their Jenkins. Users can see the results in `result.html` after each push or PR to their repo. 
 
-So Jenkins and GitHub Action, which would you prefer?
+So Jenkins and GitHub Action, which would you prefer :smirk: ?
