@@ -36,24 +36,3 @@ class TestDemo2(unittest.TestCase):
 
     def test_insert_sort_wrong(self):
         self.assertEqual(Demo.insert_sort_wrong([4, 2, 3, 1, 5]), [1, 2, 3, 4, 5])
-
-
-# if __name__ == '__main__':
-#     suit = unittest.TestSuite()
-#     suit.addTest(TestDemo("test_success"))
-#     suit.addTest(TestDemo("test_skip"))
-#     suit.addTest(TestDemo("test_fail"))
-#     suit.addTest(TestDemo2("test_insert_sort"))
-#     suit.addTest(TestDemo2("test_insert_sort_wrong"))
-#
-#     report = "./result.html"
-#     with(open(report, 'wb')) as fp:
-#         runner = HTMLTestRunner(
-#             stream=fp,
-#             title='Unit Test report',
-#             description='unit test'
-#         )
-#         runner.run(suit)
-
-    # smtp = SMTP(user="user@126.com", password="123", host="smtp.126.com")
-    # smtp.sender(to="user@126.com", attachments=report)
